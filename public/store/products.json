@@ -1,0 +1,107 @@
+{
+    "currentPage": 1,
+    "pages": 5,
+    "count": 1000,
+    "category": "Hats",
+    "products": [
+    {
+        "id": 1,
+        "name": "Brown Brim",
+        "imageUrl": "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+        "uri": "hats/brown-brim",
+        "summary": "Mobilní telefon 6,5\" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB, interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) + 5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta, neblokovaný, rychlé nabíjení 15W, baterie 4000 mAh, Android 10",
+        "price": 25.12,
+        "oldPrice": 30.12,
+        "category": "Hats",
+        "stars": 5.5,
+        "currency": "USD",
+        "isNew": false
+    },
+    {
+        "id": 2,
+        "name": "Blue Beanie",
+        "imageUrl": "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+        "price": 18.00,
+        "currency": "USD",
+        "isNew": false,
+        "uri": "hats/blue-beanie",
+        "summary": "Mobilní telefon 6,5\" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB, interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) + 5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta, neblokovaný, rychlé nabíjení 15W, baterie 4000 mAh, Android 10"
+    },
+    {
+        "id": 3,
+        "name": "Brown Cowboy",
+        "imageUrl": "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        "price": 35.00,
+        "isNew": true,
+        "discount": "-15%",
+        "currency": "USD",
+        "uri": "hats/brown-cowboy",
+        "summary": "Mobilní telefon 6,5\" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB, interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) + 5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta, neblokovaný, rychlé nabíjení 15W, baterie 4000 mAh, Android 10"
+    },
+    {
+        "id": 4,
+        "name": "Grey Brim",
+        "imageUrl": "https://i.ibb.co/RjBLWxB/grey-brim.png",
+        "price": 25.00,
+        "isNew": true,
+        "discount": "-30%",
+        "currency": "USD",
+        "uri": "hats/grey-brim",
+        "summary": "Mobilní telefon 6,5\" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB, interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) + 5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta, neblokovaný, rychlé nabíjení 15W, baterie 4000 mAh, Android 10"
+    },
+    {
+        "id": 5,
+        "name": "Green Beanie",
+        "imageUrl": "https://i.ibb.co/YTjW3vF/green-beanie.png",
+        "price": 18.00,
+        "currency": "USD",
+        "isNew": false,
+        "uri": "hats/green-beanie",
+        "summary": "Mobilní telefon 6,5\" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB, interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) + 5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta, neblokovaný, rychlé nabíjení 15W, baterie 4000 mAh, Android 10"
+    },
+    {
+        "id": 6,
+        "name": "Palm Tree Cap",
+        "imageUrl": "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
+        "price": 14.00,
+        "currency": "USD",
+        "isNew": true,
+        "discount": "-15%",
+        "uri": "hats/palm-tree-cap",
+        "summary": "Mobilní telefon 6,5\" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB, interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) + 5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta, neblokovaný, rychlé nabíjení 15W, baterie 4000 mAh, Android 10"
+    },
+    {
+        "id": 7,
+        "name": "Red Beanie",
+        "imageUrl": "https://i.ibb.co/bLB646Z/red-beanie.png",
+        "price": 18.00,
+        "oldPrice": 22.12,
+        "stars": 3.0,
+        "currency": "USD",
+        "isNew": false,
+        "uri": "hats/red-beanie",
+        "summary": "Mobilní telefon 6,5\" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB, interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) + 5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta, neblokovaný, rychlé nabíjení 15W, baterie 4000 mAh, Android 10"
+    },
+    {
+        "id": 8,
+        "name": "Grey Brim",
+        "imageUrl": "https://i.ibb.co/RjBLWxB/grey-brim.png",
+        "price": 25.00,
+        "isNew": true,
+        "discount": "-30%",
+        "currency": "USD",
+        "summary": "Mobilní telefon 6,5\" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB, interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) + 5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta, neblokovaný, rychlé nabíjení 15W, baterie 4000 mAh, Android 10",
+        "uri": "sneakers/grey-brim"
+    },
+    {
+        "id": 9,
+        "name": "Green Beanie",
+        "imageUrl": "https://i.ibb.co/YTjW3vF/green-beanie.png",
+        "price": 18.00,
+        "currency": "USD",
+        "isNew": false,
+        "summary": "Mobilní telefon 6,5\" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB, interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) + 5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta, neblokovaný, rychlé nabíjení 15W, baterie 4000 mAh, Android 10",
+        "uri": "sneakers/green-beanie"
+    }
+]
+}
