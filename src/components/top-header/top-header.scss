@@ -1,0 +1,42 @@
+#top-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1E1F29;
+
+    .header-links {
+        li {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 12px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            a {
+                color: #FFF;
+
+                &:hover {
+                    color: #D10024;
+                }
+            }
+
+            i {
+                color: #D10024;
+                margin-right: 5px;
+            }
+
+            .sign-out {
+                color: #fff;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+
+                & > i {
+                    color: #fff;
+                }
+            }
+        }
+      }
+}

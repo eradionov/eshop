@@ -6,6 +6,7 @@
     "products": [
     {
         "id": 1,
+        "brand": "H&M",
         "name": "Brown Brim",
         "imageUrl": "https://i.ibb.co/ZYW3VTp/brown-brim.png",
         "uri": "hats/brown-brim",
@@ -19,6 +20,7 @@
     },
     {
         "id": 2,
+        "brand": "Adidas",
         "name": "Blue Beanie",
         "imageUrl": "https://i.ibb.co/ypkgK0X/blue-beanie.png",
         "price": 18.00,
@@ -29,6 +31,7 @@
     },
     {
         "id": 3,
+        "brand": "Reebok",
         "name": "Brown Cowboy",
         "imageUrl": "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
         "price": 35.00,
@@ -40,6 +43,7 @@
     },
     {
         "id": 4,
+        "brand": "Bershka",
         "name": "Grey Brim",
         "imageUrl": "https://i.ibb.co/RjBLWxB/grey-brim.png",
         "price": 25.00,
@@ -51,6 +55,7 @@
     },
     {
         "id": 5,
+        "brand": "H&M",
         "name": "Green Beanie",
         "imageUrl": "https://i.ibb.co/YTjW3vF/green-beanie.png",
         "price": 18.00,
@@ -61,6 +66,7 @@
     },
     {
         "id": 6,
+        "brand": "H&M",
         "name": "Palm Tree Cap",
         "imageUrl": "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
         "price": 14.00,
@@ -72,6 +78,7 @@
     },
     {
         "id": 7,
+        "brand": "H&M",
         "name": "Red Beanie",
         "imageUrl": "https://i.ibb.co/bLB646Z/red-beanie.png",
         "price": 18.00,
@@ -84,6 +91,7 @@
     },
     {
         "id": 8,
+        "brand": "H&M",
         "name": "Grey Brim",
         "imageUrl": "https://i.ibb.co/RjBLWxB/grey-brim.png",
         "price": 25.00,
@@ -95,6 +103,7 @@
     },
     {
         "id": 9,
+        "brand": "H&M",
         "name": "Green Beanie",
         "imageUrl": "https://i.ibb.co/YTjW3vF/green-beanie.png",
         "price": 18.00,

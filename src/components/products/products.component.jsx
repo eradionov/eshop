@@ -1,5 +1,5 @@
 import React from 'react';
-import { Product } from '../product/product.component';
+import Product from '../product/product.component';
 
 export class Products extends React.Component {
     constructor() {

@@ -1,0 +1,11 @@
+.sign-up {
+    button {
+        &[type="submit"] {
+            float: right;
+
+            &:after {
+                clear: both;
+            }
+        }
+    }
+}

@@ -1,9 +1,19 @@
-  h1,h2, h3, h4, h5, h6 {
+* {
+	box-sizing: border-box;
+}
+
+h1,h2, h3, h4, h5, h6 {
 	color: #2B2D42;
 	font-weight: 700;
 	margin: 0 0 10px;
   }
   
+  button.dropdown-toggle {
+	background-color: transparent;
+	border: 1px solid transparent;
+	cursor: pointer;
+  }
+
   a {
 	color: #2B2D42;
 	font-weight: 500;

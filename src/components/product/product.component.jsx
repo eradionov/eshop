@@ -1,12 +1,15 @@
 import React from 'react';
 import './product.scss';
-import classNames from 'classnames';
 import Currency from 'react-currency-formatter';
 import { Rating } from '../rating/rating.component';
-import { Link } from 'react-router-dom';
+import { CustomButton } from '../custom-button/custom-button.component';
 
-export const Product = ({product}) => (
-    <div className={ classNames('col-lg-4', 'col-md-6', 'col-xs-12') }>
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { addCartItem } from '../../redux/cart/cart.actions';
+
+const Product = ({product, addCartItem}) => (
+    <div className="col-lg-4 col-md-6 col-xs-12">
         <div className="product">
             <Link to={product.uri}>
                 <div className="product-img">
@@ -18,7 +21,7 @@ export const Product = ({product}) => (
                 </div>
             </Link>
             <div className="product-body">
-                <Rating rating={product.stars}/>
+                <p className="product-brand">{ product.brand }</p>
                 <h3 className="product-name"><Link to={product.uri}>{ product.name }</Link></h3>
                 <span className="product-summary">{ product.summary }</span>
                 <h4 className="product-price">
@@ -39,11 +42,18 @@ export const Product = ({product}) => (
                         : ''
                     }
                 </h4>
+                <Rating rating={ product.stars }/>
 
                 <div className="add-to-cart">
-                    <button className="add-to-cart-btn"><i className={ classNames('fa', 'fa-shopping-cart') }></i> add to cart</button>
+                    <CustomButton className="add-to-cart-btn" onClick={() => addCartItem(product)}><i className = "fa fa-shopping-cart"></i> Add to cart</CustomButton>
                 </div>
             </div>
         </div>
     </div>
 )
+
+const dispatchPropsAsMap = dispatch => ({
+    addCartItem: item => dispatch(addCartItem(item))
+});
+
+export default connect(null, dispatchPropsAsMap)(Product);
