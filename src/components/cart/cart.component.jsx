@@ -1,66 +1,53 @@
 import React from 'react';
-import { removeCartItem } from '../../redux/cart/cart.actions';
 import { connect } from 'react-redux';
-import Currency from 'react-currency-formatter';
+
+import CartItem from '../cart-item/cart-item.component';
+import CartSubTotals from '../cart-subtotals/cart-subtotals.component';
+import { createStructuredSelector } from 'reselect';
+import {selectCartItems} from '../../redux/cart/cart.selectors';
+import { withRouter } from "react-router";
 
 import './cart.scss';
-import { Link } from 'react-router-dom';
+import { CustomButton } from '../custom-button/custom-button.component';
+import {toggleCartHidden} from '../../redux/cart/cart.actions';
 
 class Cart extends React.Component {
+    buttonAction(path) {
+        this.props.history.push(path);
+        this.props.dispatch(toggleCartHidden());
+    }
+
     render() {
-        const {subTotals = {}} = this.props;
+        const {cartItems} = this.props;
+
+        if (cartItems.length === 0) {
+            return (
+                <div className="cart">
+                    <div className="cart-list">
+                        <h4 className="text-center">Your cart is empty.</h4>
+                    </div>
+                </div>
+            );
+        }
 
         return(
             <div className="cart">
                 <div className="cart-list">
-                    <div className="product-widget">
-                        <div className="product-img">
-                            <img src="./img/product01.png" alt=""/>
-                        </div>
-                        <div className="product-body">
-                            <h3 className="product-name"><a href="/">product name goes here</a></h3>
-                            <h4 className="product-price"><span className="qty">1x</span>$980.00</h4>
-                        </div>
-                        <button className="delete"><i className="fa fa-close"></i></button>
-                    </div>
-
-                    <div className="product-widget">
-                        <div className="product-img">
-                            <img src="./img/product02.png" alt=""/>
-                        </div>
-                        <div className="product-body">
-                            <h3 className="product-name"><a href="/">product name goes here</a></h3>
-                            <h4 className="product-price"><span className="qty">3x</span>$980.00</h4>
-                        </div>
-                        <button className="delete" onClick={() => removeCartItem(this.props.cartItem)}><i className="fa fa-close"></i></button>
-                    </div>
+                    {cartItems?.map(item => <CartItem key = { item.id } item = { item }/>)}
                 </div>
-                <div className="cart-summary">
-                    <small>{subTotals.count} Item(s) selected</small>
-                    <h5>SUBTOTAL:&nbsp; 
-                    <Currency
-                        quantity = {subTotals.price}
-                        currency = {subTotals.currency}
-                        decimal=","
-                        group="."
-                    /></h5>
-                </div>
+                <CartSubTotals/>
                 <div className="cart-btns">
-                    <Link to="/view-cart">View Cart</Link>
-                    <Link to="/checkout">Checkout  <i className="fa fa-arrow-circle-right"></i></Link>
+                    <CustomButton onClick={() => this.buttonAction('/view-cart')}>View Cart&nbsp;<i className="fa fa-arrow-circle-right"></i></CustomButton>
+                    <CustomButton className="checkout-btn" onClick={() => this.buttonAction('/checkout')}>Checkout&nbsp;<i className="fa fa-shopping-cart"></i></CustomButton>
+
                 </div>
             </div>
         );
     }
 }
 
-const mapStateToProps = state => ({
-    cartItems: state.cartVisibility.cartItems,
-    subTotals: state.cartVisibility.subTotals
+const mapStateToProps = createStructuredSelector({
+    cartItems: selectCartItems
 });
 
-const dispatchPropsAsMap = dispatch => ({
-    removeCartItem: item => dispatch(removeCartItem(item))
-});
-
-export default connect(mapStateToProps, dispatchPropsAsMap)(Cart);
+export default withRouter(connect(mapStateToProps)(Cart));

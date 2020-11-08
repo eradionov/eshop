@@ -24,10 +24,32 @@ export const addCartItem = (cartItems, cartItemToAdd) => {
     if (existingCartItem) {
         return cartItems.map(item => 
             item.id === cartItemToAdd.id
-            ? { ...item, quantity: item.quantity + 1 }
+            ? { ...item, quantity: ++item.quantity }
             : item
         )
     }
 
     return [...cartItems, {...cartItemToAdd, quantity: 1 }];
+};
+
+export const removeCartItem = (cartItems, cartItemToRemove) => {
+    return cartItems.filter(item => item.id !== cartItemToRemove.id);
+};
+
+export const removeCartItemQuantity = (cartItems, cartItemToReduce) => {
+    const existingCartItem = cartItems.find(cartItem => cartItem.id === cartItemToReduce.id);
+
+    if (!existingCartItem) {
+        return;
+    }
+
+    if (existingCartItem.quantity > 1) {
+        return cartItems.map(item => 
+            item.id === cartItemToReduce.id
+            ? { ...item, quantity: --item.quantity }
+            : item
+        )
+    }
+
+    return removeCartItem(cartItems, cartItemToReduce);
 };

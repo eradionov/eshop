@@ -3,6 +3,8 @@ import './top-header.scss';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase/firebase.utils';
 import { connect } from 'react-redux';
+import { selectAuthenticatedUser } from '../../redux/user/user.selectors';
+import { createStructuredSelector } from 'reselect';
 
 const TopHeader = ({ currentUser }) => (
     <div id="top-header">
@@ -25,8 +27,8 @@ const TopHeader = ({ currentUser }) => (
 </div>
 );
 
-const mapStateToProps = state => ({
-    currentUser: state.user.currentUser
+const mapStateToProps = createStructuredSelector({
+    currentUser: selectAuthenticatedUser
 });
 
 export default connect(mapStateToProps)(TopHeader);

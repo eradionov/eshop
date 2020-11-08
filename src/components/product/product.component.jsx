@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addCartItem } from '../../redux/cart/cart.actions';
 
-const Product = ({product, addCartItem}) => (
+const Product = ({product, addCartItem, currency}) => (
     <div className="col-lg-4 col-md-6 col-xs-12">
         <div className="product">
             <Link to={product.uri}>
@@ -27,7 +27,7 @@ const Product = ({product, addCartItem}) => (
                 <h4 className="product-price">
                     <Currency
                         quantity = {product.price}
-                        currency = {product.currency}
+                        currency = {currency}
                         decimal=","
                         group="."
                     />

@@ -2,11 +2,11 @@ import React from 'react';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { Logo } from '../logo/logo.component';
 import TopHeader from '../top-header/top-header.component';
-import { connect } from 'react-redux';
+
 
 import './header.scss';
 
-const Header = ({ user }) => (
+const Header = () => (
     <header>
         <TopHeader/>
         
@@ -21,8 +21,5 @@ const Header = ({ user }) => (
     </header>
 );
 
-const mapStateToProps = state => ({
-    currentUser: state.user.currentUser
-});
 
-export default connect(mapStateToProps)(Header)
+export default Header

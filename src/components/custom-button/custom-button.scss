@@ -12,11 +12,10 @@
     outline: none;
 
     &:hover {
-      padding: 0px 30px 0px 50px;
-
       >i {
         opacity: 1;
         visibility: visible;
+        color: #fff;
       }
     }
 

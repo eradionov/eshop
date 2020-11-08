@@ -8,6 +8,10 @@ import { SignInAndUp } from './pages/sign-in-and-up/sign-in-and-up.component';
 import { auth, userProfileSaver } from './firebase/firebase.utils';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
+import ViewCart from './pages/view-cart/view-cart.component';
+import {selectCartItems} from './redux/cart/cart.selectors';
+import { createStructuredSelector } from 'reselect';
+import {selectAuthenticatedUser} from './redux/user/user.selectors';
 
 class App extends React.Component {
 
@@ -39,7 +43,7 @@ class App extends React.Component {
     }
   }
 
-  render() {
+  render() {console.log('Props',this.props);
     return (
       <div>
         <Header/>
@@ -47,7 +51,8 @@ class App extends React.Component {
           <div className="container">
               <Switch>
                 <Route exact path="/" component={ Home }/>
-                <Route exact path="/sign-in" render={ () => this.props.currentUser ? (<Redirect to='/'/>) : (<SignInAndUp/>) }/> 
+                <Route exact path="/sign-in" render={ () => this.props.currentUser ? (<Redirect to='/'/>) : (<SignInAndUp/>) }/>
+                <Route exact path="/view-cart" render={ () => this.props.cartItems.length === 0 ? (<Redirect to='/'/>) : (<ViewCart/> ) }/>
               </Switch>
           </div>
         </div>
@@ -56,8 +61,9 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectAuthenticatedUser,
+  cartItems : selectCartItems
 });
 
 const mapDispatchToProps = dispatch => ({
