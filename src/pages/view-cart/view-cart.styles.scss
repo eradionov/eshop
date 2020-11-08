@@ -1,0 +1,79 @@
+.checkout-page {
+    a {
+        border: 0 none;
+        outline: 0;
+        text-decoration: none;
+      }
+      
+      p {
+        margin: 0.75rem 0 0;
+      }
+      
+      h1 {
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+      }
+      
+      img,
+      .basket-module,
+      .basket-labels,
+      .basket-product {
+        width: 100%;
+      }
+      
+      input,
+      button,
+      .basket,
+      .basket-module,
+      .basket-labels,
+      .item,
+      .price,
+      .quantity,
+      .remove,
+      .subtotal,
+      .basket-product,
+      .product-image,
+      .product-details {
+        float: left;
+      }
+      
+      main {
+        clear: both;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 1rem 0;
+      }
+      
+      
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      li {
+        color: #111;
+        display: inline-block;
+        padding: 0.625rem 0;
+      }
+      
+      .row-basket-total {
+        clear: both;
+        padding-top: 20px;
+      }
+     
+
+      .basket-totals {
+        > span {
+          font-size:16px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-right:10px;
+
+          + span {
+            font-weight: normal;
+          }
+        }
+      }
+}
